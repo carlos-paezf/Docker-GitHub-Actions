@@ -21,9 +21,7 @@ jobs:
           fetch-depth: 0
 
       - name: Test variables
-        run: |
-          echo "$DOCKER_USER"
-          echo "$DOCKER_PASSWORD"
+        run: echo "$DOCKER_USER"
 
       - name: Docker login
         env:
