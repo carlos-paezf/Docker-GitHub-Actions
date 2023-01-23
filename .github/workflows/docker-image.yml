@@ -21,12 +21,9 @@ jobs:
           fetch-depth: 0
 
       - name: Test variables
-        env:
-          DOCKER_USER: ${{ env.DOCKER_USER }}
-          DOCKER_PASSWORD: ${{ env.DOCKER_PASSWORD }}
         run: |
-          echo $DOCKER_USER
-          echo $DOCKER_PASSWORD
+          echo "$DOCKER_USER"
+          echo "$DOCKER_PASSWORD"
 
       - name: Docker login
         env:
