@@ -9,7 +9,7 @@ on:
 env:
     DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
     DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-    DOCKER_REPOSITORY: ${{ env.DOCKER_USERNAME }}/docker-github-actions
+    DOCKER_REPOSITORY: ${{ secrets.DOCKER_USERNAME }}/docker-github-actions
 
 jobs:
     build:
